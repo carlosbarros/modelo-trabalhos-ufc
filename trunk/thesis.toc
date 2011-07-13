@@ -11,7 +11,6 @@
 \contentsline {section}{\numberline {2.1}Aenean et nunc}{13}
 \contentsline {subsection}{\numberline {2.1.1}Blih blih blih}{14}
 \contentsline {section}{\numberline {2.2}Nullam id tellus}{14}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{15}
-\contentsline {chapter}{Ap\^endice{} A{} -$\mskip -\thinmuskip $-{} Isto \IeC {\'e} um ap\IeC {\^e}ndice}{16}
-\contentsline {section}{\numberline {A.1}Subse\IeC {\c c}\IeC {\~a}o de um ap\IeC {\^e}ncice}{16}
-\contentsline {section}{\numberline {A.2}Outra subse\IeC {\c c}\IeC {\~a}o de um ap\IeC {\^e}ndice}{16}
+\contentsline {chapter}{Ap\^endice{} A{} -$\mskip -\thinmuskip $-{} Isto \IeC {\'e} um ap\IeC {\^e}ndice}{15}
+\contentsline {section}{\numberline {A.1}Subse\IeC {\c c}\IeC {\~a}o de um ap\IeC {\^e}ncice}{15}
+\contentsline {section}{\numberline {A.2}Outra subse\IeC {\c c}\IeC {\~a}o de um ap\IeC {\^e}ndice}{15}
