@@ -11,6 +11,12 @@
 \newcommand{\ABNTcentrodata}{}
 \newcommand{\centro}[1]{\renewcommand{\ABNTcentrodata}{#1}}
 
+\newcommand{\ABNTdepartamentodata}{}
+\newcommand{\departamento}[1]{\renewcommand{\ABNTdepartamentodata}{#1}}
+
+\newcommand{\ABNTtipotrabalhodata}{}
+\newcommand{\tipotrabalho}[1]{\renewcommand{\ABNTtipotrabalhodata}{#1}}
+
 \newcommand{\ABNTcursodata}{}
 \newcommand{\curso}[1]{\renewcommand{\ABNTcursodata}{#1}}
 
@@ -67,24 +73,26 @@
 	Palavras-Chave: \ABNTpcumdata, \ABNTpcdoisdata, \ABNTpctresdata
 }
 
-
+% ############# CAPA #############
 \renewcommand{\capa}{
 	\begin{center}
 	\espaco{1.1}
 
-		\includegraphics[width=2.5cm]{fig/UFC.pdf}
+		\includegraphics[width=2.0cm]{fig/UFC}
 
 		\large\ABNTchapterfont
 
-		\MakeUppercase{\ABNTinstituicaodata}
+		\MakeUppercase{\ABNTinstituicaodata}\\
+		\MakeUppercase{\ABNTdepartamentodata}\\
+		\MakeUppercase{Curso de \ABNTcursodata}
 
-		\vspace{0.5cm}
+		\vspace{2.5cm}
 
 		\MakeUppercase{\ABNTautordata}
 
 		\vspace{4cm}
 
-		\Large\ABNTchapterfont\MakeUppercase{\ABNTtitulodata}\par
+		\MakeUppercase{\ABNTtitulodata}\par
 
 		\vfill
 
@@ -97,13 +105,13 @@
 	\setcounter{page}{1}
 }
 
-
+% ############ FOLHA DE ROSTO ###################
 \renewcommand{\folhaderosto}{
 	\espaco{1.1}
 
 	\begin{center}
 		\large\ABNTchapterfont\MakeUppercase\ABNTautordata\par
-		\vspace{2.0cm}\par
+		\vspace{4.0cm}\par
 		\large\ABNTchapterfont\MakeUppercase\ABNTtitulodata
 	\end{center}
 
@@ -120,7 +128,7 @@
 		\end{espacosimples}
 		\hspace{.35\textwidth}
 		\begin{espacosimples}
-			\esporient{\numberline {Orientador:}}{\ignorespaces\ABNTorientadordata}
+			\esporient{\numberline{Orientador:}}{\ignorespaces\ABNTorientadordata}
 		\end{espacosimples}
 		\ABNTifnotempty{\ABNTcoorientadordata}{
 			\hspace{.35\textwidth}
@@ -136,6 +144,77 @@
 		\textbf{\MakeUppercase\ABNTlocaldata}\par
 		\textbf{\ABNTdatadata}
 	\end{center}
+
+	\pagebreak
+}
+
+% ############ TERMO DE APROVAÇÃO #############
+\def\termodeaprovacao{
+	\espaco{1.1}
+
+	\begin{center}
+		\large\ABNTchapterfont
+		\MakeUppercase{\ABNTautordata}\par
+		\vspace{1cm}
+		\MakeUppercase{\ABNTtitulodata}
+	\end{center}
+
+%	\vspace{2cm}
+%	\leftskip 0em
+%	\parindent 0em
+%	\@tempdima 5em
+%	\begin{espacosimples}
+%		\ABNTcomentariodata
+%	\end{espacosimples}
+%
+%	\vspace{1cm}
+
+	\vspace{1.0cm}
+	\hspace{.35\textwidth}
+	{
+		\noindent
+		\leftskip 0em
+		\parindent 0em
+		\begin{espacosimples}
+		\ABNTcomentariodata
+		\end{espacosimples}
+	}
+
+	{
+		\noindent \normalsize
+		Aprovada em: \_\_/\_\_/\_\_\_\_
+	}
+
+	\vspace{1cm}
+
+	\begin{center}
+	\textbf{BANCA EXAMINADORA}
+	\end{center}
+
+	\setlength{\ABNTsignthickness}{0.4pt}
+	\setlength{\ABNTsignskip}{2cm}
+
+	\ABNTifnotempty{\ABNTbancaumdata}{
+		\vspace{-0.5cm}
+		\assinatura{\ABNTbancaumdata}
+	}
+
+	\ABNTifnotempty{\ABNTbancadoisdata}{
+		\vspace{-0.5cm}
+		\assinatura{\ABNTbancadoisdata}
+	}
+
+	\ABNTifnotempty{\ABNTbancatresdata}{
+		\vspace{-0.5cm}
+		\assinatura{\ABNTbancatresdata}
+	}
+
+	\ABNTifnotempty{\ABNTbancaquatrodata}{
+		\vspace{-0.5cm}
+		\assinatura{\ABNTbancaquatrodata}
+	}
+
+	\vfill
 
 	\pagebreak
 }
@@ -184,7 +263,7 @@
 	Co-Orientador: \ABNTcoorientadordata
 
 	\hspace{0.4cm}
-	Monografia (\ABNTcursodata) - \ABNTinstituicaodata, \ABNTcentrodata.
+	\ABNTtipotrabalhodata (\ABNTcursodata) - \ABNTinstituicaodata, \ABNTcentrodata.
    
 	\hspace{0.4cm}
 	$1$. \ABNTpcumdata\ $2$. \ABNTpcdoisdata\ $3$. \ABNTpctresdata\ I. \ABNTinstituicaodata, \ABNTcentrodata.
@@ -196,19 +275,19 @@
 % ******** FOLHA DE ROSTO *********
 \newcommand{\esparea}[2]{
 	\leftskip 0em
-	\@tempdima 9.5em
+	\@tempdima 9.2em
 	\advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
 	{#1#2\hfil}}
 
 \newcommand{\esporient}[2]{
 	\leftskip 0em
-	\@tempdima 5.5em
+	\@tempdima 4.8em
 	\advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
 	{#1#2\hfil}}
 
 \newcommand{\espcoorient}[2]{
 	\leftskip 0em
-	\@tempdima 7em
+	\@tempdima 6.4em
 	\advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
 	{#1#2\hfil}}
 
@@ -340,76 +419,6 @@
 %Altera o tamanho do parágrafo
 \setlength{\parindent}{1.5cm}
 
-
-\def\termodeaprovacao{
-	\espaco{1.1}
-
-	\begin{center}
-		\Large\ABNTchapterfont
-		\MakeUppercase{\ABNTautordata}\par
-		\vspace{1cm}
-		\MakeUppercase{\ABNTtitulodata}
-	\end{center}
-
-%	\vspace{2cm}
-%	\leftskip 0em
-%	\parindent 0em
-%	\@tempdima 5em
-%	\begin{espacosimples}
-%		\ABNTcomentariodata
-%	\end{espacosimples}
-%
-%	\vspace{1cm}
-
-	\vspace{1.0cm}
-	\hspace{.35\textwidth}
-	{
-		\noindent
-		\leftskip 0em
-		\parindent 0em
-		\begin{espacosimples}
-		\ABNTcomentariodata
-		\end{espacosimples}
-	}
-
-	{
-		\noindent \normalsize
-		Aprovada em: \_\_/\_\_/\_\_\_\_
-	}
-
-	\vspace{1cm}
-
-	\begin{center}
-	\textbf{BANCA EXAMINADORA}
-	\end{center}
-
-	\setlength{\ABNTsignthickness}{0.4pt}
-	\setlength{\ABNTsignskip}{2cm}
-
-	\ABNTifnotempty{\ABNTbancaumdata}{
-		\vspace{-0.5cm}
-		\assinatura{\ABNTbancaumdata}
-	}
-
-	\ABNTifnotempty{\ABNTbancadoisdata}{
-		\vspace{-0.5cm}
-		\assinatura{\ABNTbancadoisdata}
-	}
-
-	\ABNTifnotempty{\ABNTbancatresdata}{
-		\vspace{-0.5cm}
-		\assinatura{\ABNTbancatresdata}
-	}
-
-	\ABNTifnotempty{\ABNTbancaquatrodata}{
-		\vspace{-0.5cm}
-		\assinatura{\ABNTbancaquatrodata}
-	}
-
-	\vfill
-
-	\pagebreak
-}
 
 
 \def\makeepigrafe{
