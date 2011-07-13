@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.5.26)  13 JUL 2011 00:53
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.5.26)  13 JUL 2011 01:10
 entering extended mode
  %&-line parsing enabled.
 **thesis.tex
@@ -183,25 +183,6 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 (/usr/share/texmf-texlive/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 ))
-(/usr/share/texmf/tex/latex/abntex/abntcite.sty
-(/usr/share/texmf/tex/latex/abntex/cvs-id.def)
-Package: abntcite 2006/04/25 v1.30 Chamadas de referencias no texto (NBR10520, 
-NBR10522)
-\minimumbiblabelwidth=\skip52
-\ABCIauxlen=\skip53
-\c@ABCIaux=\count99
-\c@ABCImax=\count100
-
-(/usr/share/texmf/tex/latex/abntex/nbr10520-2002.def
-(/usr/share/texmf/tex/latex/abntex/cvs-id.def)
-File: nbr10520-2002.def 2006/04/25 v1.4 Definicoes para abntcite (NBR10520:2002
-)
-)
-\biblabelsep=\skip54
-LaTeX Info: Redefining \newblock on input line 466.
-LaTeX Info: Redefining \cite on input line 493.
-\ABCItoken=\toks15
-)
 (/usr/share/texmf-texlive/tex/generic/babel/babel.sty
 Package: babel 2008/07/06 v3.8l The Babel package
 
@@ -210,7 +191,7 @@ Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 
 (/usr/share/texmf-texlive/tex/generic/babel/babel.def
 File: babel.def 2008/07/06 v3.8l Babel common definitions
-\babel@savecnt=\count101
+\babel@savecnt=\count99
 \U@D=\dimen113
 )
 \l@brazil = a dialect from \language\l@portuges 
@@ -218,8 +199,8 @@ Package babel Info: Making " an active character on input line 145.
 ))
 (/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks16
-\inpenc@posthook=\toks17
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
 
 (/usr/share/texmf-texlive/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
@@ -435,7 +416,26 @@ Now handling font encoding U ...
 ))
 (/usr/share/texmf/tex/latex/abntex/abnt-alf.sty
 Package: abnt-alf 2002/06/24
+
+(/usr/share/texmf/tex/latex/abntex/abntcite.sty
+(/usr/share/texmf/tex/latex/abntex/cvs-id.def)
+Package: abntcite 2006/04/25 v1.30 Chamadas de referencias no texto (NBR10520, 
+NBR10522)
+\minimumbiblabelwidth=\skip52
+\ABCIauxlen=\skip53
+\c@ABCIaux=\count100
+\c@ABCImax=\count101
+
+(/usr/share/texmf/tex/latex/abntex/nbr10520-2002.def
+(/usr/share/texmf/tex/latex/abntex/cvs-id.def)
+File: nbr10520-2002.def 2006/04/25 v1.4 Definicoes para abntcite (NBR10520:2002
 )
+)
+\biblabelsep=\skip54
+LaTeX Info: Redefining \newblock on input line 466.
+LaTeX Info: Redefining \cite on input line 493.
+\ABCItoken=\toks17
+))
 (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -464,19 +464,19 @@ Package: lastpage 1994/06/25 v0.1b LaTeX2e package for refs to last page number
 (./cha.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 86.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 85.
  (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -498,54 +498,54 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 File: fig/UFC.pdf Graphic file (type pdf)
  <use fig/UFC.pdf>
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 88
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 87.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 87
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 88
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 87
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 88
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 87
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 88
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 87
 .
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 87.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 87.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 87.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 87.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 87.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./fig/UFC.pdf>] [1]
-Underfull \vbox (badness 2173) detected at line 90
+Underfull \vbox (badness 2173) detected at line 89
  []
 
 [2] [3] [4
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 99.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 98.
  (./abstract.tex
-Overfull \hbox (13.65834pt too wide) in paragraph at lines 99--1
+Overfull \hbox (13.65834pt too wide) in paragraph at lines 98--1
 []  $[]$
  []
 
@@ -608,19 +608,19 @@ Apendice A.
 +-------------------------------------------------------------------+
 AED: lastpage setting LastPage (./thesis.aux (./cha.aux)) ) 
 Here is how much of TeX's memory you used:
- 2681 strings out of 495041
- 35998 string characters out of 1181897
- 95866 words of memory out of 3000000
- 5743 multiletter control sequences out of 15000+50000
+ 2679 strings out of 495041
+ 35954 string characters out of 1181897
+ 95709 words of memory out of 3000000
+ 5741 multiletter control sequences out of 15000+50000
  32176 words of font info for 66 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 30i,9n,41p,1302b,245s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,9n,41p,1302b,245s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-te
 xlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr
 /share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (17 pages, 279665 bytes).
+Output written on thesis.pdf (17 pages, 279666 bytes).
 PDF statistics:
  81 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
