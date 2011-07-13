@@ -18,6 +18,7 @@
 % Autor: Diego Victor Simões de Sousa
 % Data: 10/06/2011
 
+
 \documentclass[pnumabnt,normaltoc,espacoumemeio,capchap]{abnt}		
 \usepackage[brazil]{babel}
 \usepackage[utf8]{inputenc}
@@ -26,6 +27,7 @@
 \usepackage{ufc}
 \usepackage{multicol}
 \usepackage{lastpage}
+\bibliographystyle{abnt-alf}
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 
@@ -47,6 +49,14 @@ de Pós-Graduação em Ciência da Computação da
 Universidade Federal do Ceará, como requisito
 parcial para a obtenção do grau de Mestre em
 Ciência da Computação.
+}
+
+\comentarioaprovacao{
+Dissertação submetida à Coordenação do Curso
+de Pós-Graduação em Ciência da Computação, da
+Universidade Federal do Ceará, como requisito
+parcial para a obtenção do grau de Mestre em
+Ciência da Computação. 
 }
 
 % Informações institucionais
@@ -97,9 +107,11 @@ científicos da UFC.
 
 \input{ch1}
 \input{ch2}
-\bibliographystyle{abnt-alf}
+
 \bibliography{bib}
+
 \appendix
+
 \include{cha}
 
 \end{document}

@@ -1,12 +1,18 @@
 % ufc.sty
 %
-% Pacote LaTeX contendo definições para facilitar a criação de trabalhos
+% Pacote LaTeX contendo definições para facilritar a criação de trabalhos
 % seguindo o Guia de Normalização da Universidade Federal do Ceará.
+
+% Documento baseado nos modelos da UECE criados por: Rudy Matela e Sergio Correia
+% Disponíveis em: http://www.larces.uece.br/~rudy/pub/modelo_monografia/ e 
+% https://github.com/qrwteyrutiyoup/modelo-latex-uece
 %
 % Autor: Diego Victor Simões de Sousa
 % Data: 10/06/2011
 
 \RequirePackage{lastpage}
+
+\newcommand{\comentarioaprovacao}[1]{\newcommand{\ABNTcomentarioaprovacaodata}{#1}}
 
 \newcommand{\ABNTcentrodata}{}
 \newcommand{\centro}[1]{\renewcommand{\ABNTcentrodata}{#1}}
@@ -151,7 +157,7 @@
 % ############ TERMO DE APROVAÇÃO #############
 \def\termodeaprovacao{
 	\espaco{1.1}
-
+	
 	\begin{center}
 		\large\ABNTchapterfont
 		\MakeUppercase{\ABNTautordata}\par
@@ -176,7 +182,7 @@
 		\leftskip 0em
 		\parindent 0em
 		\begin{espacosimples}
-		\ABNTcomentariodata
+		\ABNTcomentarioaprovacaodata Área de concentração: \ABNTareaconcentracao
 		\end{espacosimples}
 	}
 
@@ -293,9 +299,24 @@
 
 
 % Altera o tamanho das fontes dos capítulos e dos apêndices
-\renewcommand{\ABNTchapterfont}{\bfseries}
-\renewcommand{\ABNTchaptersize}{\Large}
-\renewcommand{\ABNTanapsize}{\Large}
+\renewcommand{\rightmarkformat}{\small}
+\renewcommand{\leftmarkformat}{}
+\renewcommand{\thepageformat}{\small}
+\renewcommand{\ABNTchaptersize}{\huge}
+\renewcommand{\ABNTCHAPTERfont}{\bfseries}
+\renewcommand{\ABNTChapterfont}{\bfseries}
+
+\renewcommand{\ABNTsectionfontsize}{\normalsize}
+\renewcommand{\ABNTsectionfont}{\bfseries}
+\renewcommand{\ABNTsubsectionfontsize}{\normalsize}
+\renewcommand{\ABNTsubsectionfont}{\bfseries}
+\renewcommand{\ABNTsubsubsectionfontsize}{\normalsize}
+\renewcommand{\ABNTsubsubsectionfont}{\bfseries}
+\renewcommand{\ABNTparagraphfontsize}{\normalsize}
+\renewcommand{\ABNTparagraphfont}{\bfseries}
+\renewcommand{\ABNTsubparagraphfontsize}{\normalsize}
+\renewcommand{\ABNTsubparagraphfont}{\normalfont\bfseries}
+\renewcommand{\ABNTanapsize}{\normalsize}
 
 %Altera o espaçamento entre dots
 \renewcommand\@dotsep{2}
@@ -304,8 +325,8 @@
 \renewcommand\l@chapter[2]{
   \ifnum \c@tocdepth >\m@ne
     \addpenalty{-\@highpenalty}%
-    \vskip 1.0em \@plus\p@
-    \setlength\@tempdima{1.5em}%
+%      \vskip 1.5cm \@plus\p@
+    \setlength\@tempdima{3.2em}%
     \begingroup
       \ifthenelse{\boolean{ABNTpagenumstyle}}
         {\renewcommand{\@pnumwidth}{3.5em}}
@@ -315,7 +336,7 @@
       \leavevmode \normalsize\ABNTtocchapterfont
       \advance\leftskip\@tempdima
       \hskip -\leftskip
-      #1\nobreak\dotfill \nobreak%
+      \MakeUppercase{#1}\nobreak\normalfont\dotfill\nobreak%
       \ifthenelse{\boolean{ABNTpagenumstyle}}
          {%
           \hb@xt@\@pnumwidth{\hss 
@@ -327,11 +348,51 @@
       \penalty\@highpenalty
     \endgroup
   \fi}
+  
+\def\@makeanapchapterhead#1{%
+  {%
+%  \noindent\rule{\textwidth}{1.7pt}\\\par
+  \normalfont\ABNTchapterfont\ABNTanapsize
+  \espaco{simples}
+  \ifthenelse{\boolean{ABNTAnApIndicativoIndent}}
+    {\ifthenelse{\boolean{ABNTCapAnnexAppendix}}
+       {\settowidth{\ABNTanapindent}{\MakeUppercase{\anapchaptername}
+          \thechapter{} \ABNTtravessao{}}}
+       {\settowidth{\ABNTanapindent}{\anapchaptername
+          \thechapter{} \ABNTtravessao{}}}
+    }
+    {}
+%   \vspace*{30pt}
+%
+  \raggedright\espaco{1.2}\par
+  \begin{list}{}{%
+       \setlength{\listparindent}{0cm}%
+       \setlength{\itemindent}{-\ABNTanapindent}%
+       \setlength{\rightmargin}{0cm}%
+       \setlength{\leftmargin}{\ABNTanapindent}%
+       \setlength{\parsep}{0pt}}%
+    \item %
+      \ifthenelse{\equal{#1}{}}
+         {\ifthenelse{\boolean{ABNTCapAnnexAppendix}}
+            {\MakeUppercase{\anapchaptername}}
+            {\anapchaptername}
+          \thechapter \ABNTaposindicativoanap}
+         {\ifthenelse{\boolean{ABNTCapAnnexAppendix}}
+            {\MakeUppercase{\anapchaptername}}                                                                                                                     
+            {\anapchaptername}                                                                                                                                     
+          \thechapter{} \ABNTtravessao{} \ABNTaposindicativoanap                                                                                                   
+            \ifthenelse{\boolean{ABNTcapchap}}%                                                                                                                    
+              {\MakeUppercase{#1}}%                                                                                                                                
+              {#1}}                                                                                                                                                
+  \end{list}                                                                                                                                                       
+  \par\vspace{25pt}%                                                                                                                                               
+  }%                      
+}           
 
 
-\renewcommand*\l@section{\@dottedtocline{1}{0em}{2.3em}}
-\renewcommand*\l@subsection{\@dottedtocline{2}{0em}{3.2em}}
-\renewcommand*\l@subsubsection{\@dottedtocline{3}{0em}{4.1em}}
+\renewcommand*\l@section[2]{\@dottedtocline{1}{0em}{3.2em}{\textbf{#1}}{#2} }
+\renewcommand*\l@subsection{\normalfont\@dottedtocline{2}{0em}{3.2em}}
+\renewcommand*\l@subsubsection{\@dottedtocline{3}{0em}{3.2em}}
 
 
 % Cria um comando auxiliar para montagem da lista de figuras
@@ -417,9 +478,40 @@
 
 
 %Altera o tamanho do parágrafo
-\setlength{\parindent}{1.5cm}
+\setlength{\parindent}{2cm}
 
+% Ajusta a margem superior dos capítulos (3cm)
+\def\@makechapterhead#1{%
+  {%
+%  \noindent\rule{\textwidth}{1.7pt}\\\par
+% 	\thispagestyle{empty}%
+  \normalsize\bfseries%
+  \espaco{simples}%
+  \noindent%
+  \parbox[b]{\textwidth}{%
+    \parbox[t]{4ex}{\thechapter}%
+    \parbox[t]{\textwidth-4ex-1ex}%
+      {\interlinepenalty\@M\raggedright%
+        \ifthenelse{\boolean{ABNTcapchap}}%
+          {\MakeUppercase{#1}}%
+          {#1}
+      }%
+    \vspace*{0cm}
+    }\\[2pt]%
+  }%
+}
 
+% Ajusta a margem superior das páginas que contêm elementos
+% pre-textuais - abstract, resumo, agradecimentos, etc. (3cm) 
+\def\@makeschapterhead#1{%
+  {\centering\normalsize\bfseries%
+   \ifthenelse{\boolean{ABNTcapchap}}%
+     {\MakeUppercase{#1}}%
+     {#1}
+    \par}%
+  \vspace{25pt}%
+  \par%
+}
 
 \def\makeepigrafe{
 	\vspace*{20cm}
