@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.6.30)  13 JUL 2011 18:09
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.6.30)  13 JUL 2011 18:16
 entering extended mode
  %&-line parsing enabled.
 **thesis.tex
@@ -625,7 +625,11 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./fig/UFC.pdf>]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 96.
- [1] [2] [3] [4
+ [1]
+Overfull \vbox (7.09137pt too high) detected at line 97
+ []
+
+[2] [3] [4
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
@@ -699,7 +703,7 @@ AED: lastpage setting LastPage (./thesis.aux (./cha.aux)) )
 Here is how much of TeX's memory you used:
  5359 strings out of 495041
  76362 string characters out of 1181897
- 144067 words of memory out of 3000000
+ 144082 words of memory out of 3000000
  8380 multiletter control sequences out of 15000+50000
  45427 words of font info for 71 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
@@ -709,7 +713,7 @@ xlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr
 /share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (17 pages, 280612 bytes).
+Output written on thesis.pdf (17 pages, 280715 bytes).
 PDF statistics:
  81 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
