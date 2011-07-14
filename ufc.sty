@@ -275,14 +275,16 @@ Palavras-chave: \ABNTpcumdata. \ABNTpcdoisdata. \ABNTpctresdata.
 	}
 }
 
-
+% ############## FICHA CATALOGRÁFICA ####################
 \gdef\ufccipdata{
 	\small
 	\hspace{0.4cm}
 	Orientador: \ABNTorientadordata
 	
-	\hspace{0.4cm}
-	Co-Orientador: \ABNTcoorientadordata
+	\ABNTifnotempty{\ABNTcoorientadordata}{
+		\hspace{0.4cm}
+		Co-Orientador: \ABNTcoorientadordata
+	}
 
 	\hspace{0.4cm}
 	\ABNTtipotrabalhodata (\ABNTcursodata) - \ABNTinstituicaodata, \ABNTdepartamentodata, \ABNTcidadedata, \ABNTdatadata.
