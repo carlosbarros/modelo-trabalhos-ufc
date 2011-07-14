@@ -27,6 +27,12 @@
 \newcommand{\ABNTtipotrabalhodata}{}
 \newcommand{\tipotrabalho}[1]{\renewcommand{\ABNTtipotrabalhodata}{#1}}
 
+\newcommand{\ABNTniveldata}{}
+\newcommand{\nivel}[1]{\renewcommand{\ABNTniveldata}{#1}}
+
+\newcommand{\ABNTtituloacademicodata}{}
+\newcommand{\tituloacademico}[1]{\renewcommand{\ABNTtituloacademicodata}{#1}}
+
 \newcommand{\ABNTcursodata}{}
 \newcommand{\curso}[1]{\renewcommand{\ABNTcursodata}{#1}}
 
@@ -35,6 +41,9 @@
 
 \newcommand{\ABNTautorrdata}{}
 \newcommand{\autorr}[1]{\renewcommand{\ABNTautorrdata}{#1}}
+
+\newcommand{\ABNTdedicatoriadata}{}
+\newcommand{\dedicatoria}[1]{\renewcommand{\ABNTdedicatoriadata}{#1}}
 
 \newcommand{\ABNTepigrafedata}{}
 \newcommand{\epigrafe}[1]{\renewcommand{\ABNTepigrafedata}{#1}}
@@ -77,12 +86,12 @@
 
 \newcommand{\keywords}{
 \noindent
-Keywords: \ABNTkwumdata, \ABNTkwdoisdata, \ABNTkwtresdata
+Keywords: \ABNTkwumdata. \ABNTkwdoisdata. \ABNTkwtresdata.
 }
 
 \newcommand{\palavraschave}{
 \noindent
-Palavras-chave: \ABNTpcumdata, \ABNTpcdoisdata, \ABNTpctresdata
+Palavras-chave: \ABNTpcumdata. \ABNTpcdoisdata. \ABNTpctresdata.
 }
 
 % ############# CAPA #############
@@ -252,10 +261,10 @@ Palavras-chave: \ABNTpcumdata, \ABNTpcdoisdata, \ABNTpctresdata
 			\ABNTautorrdata.
 
 			\hspace{0.4cm}
-			\ABNTtitulodata\ / \ABNTautordata. -- \ABNTcidadedata, \ABNTdatadata.
+			\ABNTtitulodata\ / \ABNTautordata. \ABNTdatadata.
 
 			\hspace{0.4cm}
-			\pageref{LastPage}p.;il.
+			\pageref{LastPage}p.;il. color. enc.
 
 			\ufccipdata
 
@@ -268,6 +277,7 @@ Palavras-chave: \ABNTpcumdata, \ABNTpcdoisdata, \ABNTpctresdata
 
 
 \gdef\ufccipdata{
+	\small
 	\hspace{0.4cm}
 	Orientador: \ABNTorientadordata
 	
@@ -275,10 +285,10 @@ Palavras-chave: \ABNTpcumdata, \ABNTpcdoisdata, \ABNTpctresdata
 	Co-Orientador: \ABNTcoorientadordata
 
 	\hspace{0.4cm}
-	\ABNTtipotrabalhodata (\ABNTcursodata) - \ABNTinstituicaodata, \ABNTcentrodata.
+	\ABNTtipotrabalhodata (\ABNTcursodata) - \ABNTinstituicaodata, \ABNTdepartamentodata, \ABNTcidadedata, \ABNTdatadata.
    
 	\hspace{0.4cm}
-	$1$. \ABNTpcumdata\ $2$. \ABNTpcdoisdata\ $3$. \ABNTpctresdata\ I. \ABNTinstituicaodata, \ABNTcentrodata.
+	$1$. \ABNTpcumdata\ $2$. \ABNTpcdoisdata\ $3$. \ABNTpctresdata\ I. \ABNTorientadordata (Orient.) II. \ABNTinstituicaodata  -- \ABNTcursodata  (\ABNTniveldata) III. \ABNTtituloacademicodata
 
 }
 
@@ -519,16 +529,28 @@ Palavras-chave: \ABNTpcumdata, \ABNTpcdoisdata, \ABNTpctresdata
   \par%
 }
 
+% ############## EPÍGRAFE ######################
 \def\makeepigrafe{
 	\hspace{.1\textwidth}
 	\vfill
 	\hspace{.35\textwidth}
 	\begin{minipage}{.5\textwidth}
 		\par
-		\textit{
 			\ABNTepigrafedata \\ 
-			\bfseries \ABNTautorepigrafedata
-		}
+			\flushright{(\ABNTautorepigrafedata)}
+		
+	\end{minipage}
+	\pagebreak
+}
+
+% ################ DEDICATÓRIA ###################
+\def\makededicatoria{
+	\hspace{.1\textwidth}
+	\vfill
+	\hspace{.5\textwidth}
+	\begin{minipage}{.4\textwidth}
+		\par
+			\ABNTdedicatoriadata 
 	\end{minipage}
 	\pagebreak
 }
