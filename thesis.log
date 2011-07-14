@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.6.30)  13 JUL 2011 18:26
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.5.12)  14 JUL 2011 10:36
 entering extended mode
  %&-line parsing enabled.
 **thesis.tex
@@ -641,17 +641,20 @@ Overfull \hbox (13.65834pt too wide) in paragraph at lines 101--1
 [5] [6
 
 
+] [7
+
+
 ]) (./thesis.lof)
 \tf@lof=\write3
 \openout3 = `thesis.lof'.
 
- [7
+ [8
 
 ] (./thesis.lot)
 \tf@lot=\write4
 \openout4 = `thesis.lot'.
 
- [8
+ [9
 
 ] (./thesis.toc
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
@@ -660,37 +663,38 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
- [9
+ [10
 
-] (./ch1.tex
+]
+(./ch1.tex
 Cap\'{\i }tulo 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
 
  []
 
-[10
+[11
 
 
 ]
 File: fig/UFC.pdf Graphic file (type pdf)
- <use fig/UFC.pdf> [11]) (./ch2.tex [12]
+ <use fig/UFC.pdf> [12]) (./ch2.tex [13]
 Cap\'{\i }tulo 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
 
  []
 
-[13
+[14
 
-]) (./thesis.bbl [14]) [15
+]) (./thesis.bbl [15]) [16
 
 ]
 \openout2 = `cha.aux'.
 
  (./cha.tex
 Apendice A.
-) [16
+) [17
 
 
 ]
@@ -702,7 +706,7 @@ AED: lastpage setting LastPage (./thesis.aux (./cha.aux)) )
 Here is how much of TeX's memory you used:
  5359 strings out of 495041
  76362 string characters out of 1181897
- 144081 words of memory out of 3000000
+ 144083 words of memory out of 3000000
  8380 multiletter control sequences out of 15000+50000
  45427 words of font info for 71 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
@@ -712,9 +716,9 @@ xlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr
 /share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (17 pages, 280715 bytes).
+Output written on thesis.pdf (18 pages, 281760 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
+ 84 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
